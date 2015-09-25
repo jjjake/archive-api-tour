@@ -1,18 +1,16 @@
-Archive.org API Tour
-=====================
+# Archive.org API Tour
 
 
 ----------
 
 
-Searching
----------
+## Searching
 
 The Archive.org Advanced Search API can be used to retrieve search results from Archive.org in various formats, including JSON.
 You can use this [form](https://archive.org/advancedsearch.php?q=licenseurl:(*creativecommons.org*)&fl[]=identifier,title,mediatype,collection&rows=1&output=json "Advanced Search form") to setup a query.
 You may pick what kinds of information you would like returned, how the results should be sorted, and how many results to return. 
 
-Example query:
+For example:
 
     $ curl 'https://archive.org/advancedsearch.php?q=licenseurl:(*creativecommons.org*)&fl[]=identifier,title,mediatype,collection&rows=1&output=json'
     {
@@ -47,8 +45,7 @@ Example query:
 See `scripts/search.sh` for more examples.
 
 
-Downloading
------------
+## Downloading
 
 High performance downloads can be achieved via the Archive.org web infrastructure using permalinks formatted like so:
 
@@ -61,9 +58,15 @@ For example:
 See scripts/download.sh for more examples.
 
 
-Metadata API
-------------
+## Metadata API
 
-The Metadata Read API is the fastest and most flexible way to retrieve metadata for items on archive.org. We’ve seen upwards of 1,000 reads per second for some collections!
+The Metadata API is intended for fast, flexible, and reliable reading and writing of Internet Archive items.
+
+### Metadata Read API
+
+The Metadata Read API is the fastest and most flexible way to retrieve metadata for items on archive.org.
+We’ve seen upwards of 1,000 reads per second for some collections!
 
 To retrieve all of an items metadata, simply send a GET request to an URL formatted like so: 
+
+    https://archive.org/metadata/$identifier
