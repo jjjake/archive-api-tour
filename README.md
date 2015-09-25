@@ -11,6 +11,7 @@
 * [Downloading](#downloading)
 * [Metadata API](#metadata-api)
 * [Uploading](#uploading)
+* [The Internet Archive CLI/Python Library](#the-internet-archive-cli-Python-library)
 
 
 ## Introduction
@@ -61,6 +62,8 @@ For example:
     }
 
 See `scripts/search.sh` for more examples.
+
+Documentation: https://archive.org/advancedsearch.php#raw
 
 
 ## Downloading
@@ -208,7 +211,18 @@ Flexible
 - Supports arbitrary changes to multiple metadata targets through a unified API.
 - Changes are easy — no string concatenation or libraries needed.
 
+Documentation: http://blog.archive.org/2013/07/04/metadata-api/
+
 
 ## Uploading
 
-TODO: this.
+Documentation:
+- https://archive.org/help/abouts3.txt
+- https://github.com/vmbrasseur/IAS3API
+
+
+## The Internet Archive CLI/Python Library
+
+Resources:
+- https://github.com/jjjake/internetarchive
+- https://pypi.python.org/pypi/internetarchive
