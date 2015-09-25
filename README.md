@@ -174,15 +174,18 @@ It utilizes version 02 of the [JSON Patch standard](http://tools.ietf.org/html/d
 #### Overview
 
 Timely
+
     - Callers receive results (success or failure) immediately.
     - Changes are quickly reflected through the metadata read API.
 
 Safe
+
     - All writes pass through the catalog, so all changes are recorded.
     - All writes are checked before they’re submitted to the catalog.
     - If there’s a problem, no catalog task is created. Goal: no redrows!
     - All checks are repeated when the catalog task is executed.
 
 Flexible
+
     - Supports arbitrary changes to multiple metadata targets through a unified API.
     - Changes are easy — no string concatenation or libraries needed.
