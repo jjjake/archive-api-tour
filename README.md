@@ -6,10 +6,20 @@
 
 # Table of Contents
 
+* [Introduction](#introduction)
 * [Searching](#searching)
 * [Downloading](#downloading)
 * [Metadata API](#metadata-api)
 * [Uploading](#uploading)
+
+
+## Introduction
+
+This repository is a guide to the various Archive.org APIs.
+It contains summarized documentation and example code.
+
+To get started, simply run `make` from the root of this repository.
+This will download a couple of binaries (`jq` for parsing JSON and the `ia` command-line tool), as well as setup a virtualenv with the `internetarchive` Python lib installed.
 
 
 ## Searching
