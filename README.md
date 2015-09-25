@@ -4,6 +4,14 @@
 ----------
 
 
+# Table of Contents
+
+* [Searching](#searching)
+* [Downloading](#downloading)
+* [Metadata API](#metadata-api)
+* [Uploading](#uploading)
+
+
 ## Searching
 
 The Archive.org Advanced Search API can be used to retrieve search results from Archive.org in various formats, including JSON.
@@ -189,3 +197,8 @@ Flexible
 
 - Supports arbitrary changes to multiple metadata targets through a unified API.
 - Changes are easy — no string concatenation or libraries needed.
+
+
+## Uploading
+
+TODO: this.
