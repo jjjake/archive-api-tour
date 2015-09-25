@@ -62,7 +62,7 @@ For example:
       }
     }
 
-See `scripts/search.sh` for more examples.
+See (scripts/search.sh)[/scripts/search.sh] for more examples.
 
 **Documentation:** https://archive.org/advancedsearch.php#raw
 
