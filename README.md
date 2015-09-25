@@ -62,7 +62,7 @@ For example:
       }
     }
 
-See [scripts/search.sh](/scripts/search.sh) for more examples.
+See [examples/search.sh](/examples/search.sh) for more examples.
 
 **Documentation:** https://archive.org/advancedsearch.php#raw
 
@@ -77,7 +77,7 @@ For example:
 
     $ wget https://archive.org/download/gov.uspto.patents.application.10777955/10777955-2004-02-12-00001-WFEE_text.pdf
 
-See `scripts/download.sh` for more examples.
+See [examples/download.sh](/examples/download.sh) for more examples.
 
 **Documentation:** https://blog.archive.org/2012/04/26/downloading-in-bulk-using-wget/
 
@@ -230,6 +230,9 @@ Thumbnail images (180px wide) of Archive.org items can be retrieved using a stan
 
     https://archive.org/services/img/$identifier
 
+For example:
+
+    $ curl -sL "https://archive.org/services/img/ote > ote.jpg
 
 ## The Internet Archive CLI/Python Library
 
