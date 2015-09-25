@@ -73,6 +73,7 @@ To retrieve all of an items metadata, simply send a GET request to an URL format
 
 For example:
 
+    $ curl https://archive.org/metadata/ote   
     {
       "created": 1442891019,
       "d1": "ia601507.us.archive.org",
@@ -154,5 +155,34 @@ For example:
       ]
     }
 
+#### Sub-item Access
+
+The Metadata API returns all of an item’s metadata by default.
+You can access specific metadata elements like so:
+
+    $ curl https://archive.org/metadata/ote/files_count
+    {"result":5}
+    $ curl https://archive.org/metadata/ote/files/2/name
+    {"result":"ote_meta.xml"}
+
 
 ### Metadata Write API
+
+The metadata write API is intended to make changes to metadata timely, safe and flexible.
+It utilizes version 02 of the [JSON Patch standard](http://tools.ietf.org/html/draft-ietf-appsawg-json-patch-02).
+
+#### Overview
+
+Timely
+    - Callers receive results (success or failure) immediately.
+    - Changes are quickly reflected through the metadata read API.
+
+Safe
+    - All writes pass through the catalog, so all changes are recorded.
+    - All writes are checked before they’re submitted to the catalog.
+    - If there’s a problem, no catalog task is created. Goal: no redrows!
+    - All checks are repeated when the catalog task is executed.
+
+Flexible
+    - Supports arbitrary changes to multiple metadata targets through a unified API.
+    - Changes are easy — no string concatenation or libraries needed.
