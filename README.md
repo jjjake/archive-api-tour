@@ -11,6 +11,7 @@
 * [Downloading](#downloading)
 * [Metadata API](#metadata-api)
 * [Uploading](#uploading)
+* [Item Image API](#item-image-api)
 * [The Internet Archive CLI/Python Library](#the-internet-archive-cli-Python-library)
 
 
@@ -221,6 +222,13 @@ Flexible
 **Documentation:**
 - https://archive.org/help/abouts3.txt
 - https://github.com/vmbrasseur/IAS3API
+
+
+## Item Image API
+
+Thumbnail images (180px wide) of Archive.org items can be retrieved using a standard image permalink formatted like so:
+
+    https://archive.org/services/img/$identifier
 
 
 ## The Internet Archive CLI/Python Library
