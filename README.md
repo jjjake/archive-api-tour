@@ -63,7 +63,7 @@ For example:
 
 See `scripts/search.sh` for more examples.
 
-Documentation: https://archive.org/advancedsearch.php#raw
+*Documentation:* https://archive.org/advancedsearch.php#raw
 
 
 ## Downloading
@@ -77,6 +77,8 @@ For example:
     $ wget https://archive.org/download/gov.uspto.patents.application.10777955/10777955-2004-02-12-00001-WFEE_text.pdf
 
 See `scripts/download.sh` for more examples.
+
+*Documentation:* https://blog.archive.org/2012/04/26/downloading-in-bulk-using-wget/
 
 
 ## Metadata API
@@ -211,18 +213,18 @@ Flexible
 - Supports arbitrary changes to multiple metadata targets through a unified API.
 - Changes are easy — no string concatenation or libraries needed.
 
-Documentation: http://blog.archive.org/2013/07/04/metadata-api/
+*Documentation:* http://blog.archive.org/2013/07/04/metadata-api/
 
 
 ## Uploading
 
-Documentation:
+*Documentation:*
 - https://archive.org/help/abouts3.txt
 - https://github.com/vmbrasseur/IAS3API
 
 
 ## The Internet Archive CLI/Python Library
 
-Resources:
+*Resources:*
 - https://github.com/jjjake/internetarchive
 - https://pypi.python.org/pypi/internetarchive
