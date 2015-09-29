@@ -17,6 +17,8 @@
 
 ## Introduction
 
+**Note: this repository is a work in progress**
+
 This repository is a guide to the various Archive.org APIs.
 It contains summarized documentation and example code.
 
